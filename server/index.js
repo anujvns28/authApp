@@ -20,6 +20,8 @@ app.use(cors ({
     methods:["PUT","POST"]
   }))
 
+  app.use(express.json())
+
   app.use(session({
     secret: 'keyboard cat',
     resave: false,
